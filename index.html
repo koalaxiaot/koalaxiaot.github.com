@@ -19,7 +19,7 @@ title: 考拉小T
 <div>
 <script>
  {% for post in site.posts %}
-   console.log({{ post }});
+   console.log(JSON.parse({{ post }}));
  {% endfor %}
 </script>
 </div>
