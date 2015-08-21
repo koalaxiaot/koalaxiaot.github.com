@@ -2,19 +2,20 @@
 layout: post
 ---
 
-- [ ] a bigger project
-  - [ ] first subtask #1234
-  - [ ] follow up subtask #4321
-- [x] final subtask cc @mention
-- [ ] a separate task
-
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> are supported 
-- [x] list syntax is required (any unordered or ordered list supported) 
-- [x] this is a complete item 
-- [ ] this is an incomplete item
-
 1. [ ] asdfjalsdjfalsdf asdlfjasldf 
 2. [ ] asdfjalsdjfalsdf asdlfjasldf 
+
+| Name | Description          |
+| ------------- | ----------- |
+| Help      | ~~Display the~~ help window.|
+| Close     | _Closes_ a window     |
+
+
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
 
 {% highlight ruby linenos %}
 	def show
