@@ -547,7 +547,7 @@ aside a.button {
 
 code, pre {
   margin-bottom: 30px;
-  font-family:Consolas, 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+  font-family:'Bitstream Vera Sans Mono',Consolas, 'DejaVu Sans Mono',  monospace;
   /**font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;**/
   font-size: 13px;
   color: #222;
