@@ -4,7 +4,7 @@ title: gcc编译math.h方法
 category: 'Linux C'
 ---
 
-在用gcc编译C时，碰到了`undefined reference to \`sin'`的错误，源代码如下
+在用gcc编译C时，碰到了``undefined reference to `sin'``的错误，源代码如下
 
 {% highlight c linenos %}
 #include <math.h>
