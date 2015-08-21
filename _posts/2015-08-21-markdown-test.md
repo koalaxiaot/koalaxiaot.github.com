@@ -13,6 +13,9 @@ layout: post
 - [x] this is a complete item 
 - [ ] this is an incomplete item
 
+1. [ ] asdfjalsdjfalsdf asdlfjasldf 
+2. [ ] asdfjalsdjfalsdf asdlfjasldf 
+
 {% highlight ruby linenos %}
 	def show
     @widget = Widget(params[:id])
