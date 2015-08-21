@@ -18,6 +18,8 @@ title: 考拉小T
 
 <div>
 <script>
- console.log({{ site.posts }});
+ {% for post in site.posts %}
+   console.log({{ post }});
+ {% endfor %}
 </script>
 </div>
