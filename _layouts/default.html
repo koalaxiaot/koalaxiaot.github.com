@@ -19,17 +19,16 @@
     <header>
       <div class="inner">
         <h1> {{ site.name }} </h1>
-        <h2> {{ site.subname }} </h2>
-         <a href="https://www.github.io/koalaxiaot" class="button" target="_blank"><small>Visit Koala's</small> GitHub</a>
+        <h2> {{ site.sub_name }} </h2>
+         <a href="{{ site.github_url }}" class="button" target="_blank"><small>Visit Koala's</small> GitHub</a>
       </div>
     </header>
 
     <div id="content-wrapper">
       <div class="inner clearfix">
-        <section id="main-content">
-          
-          {{ content }}
 
+        <section id="main-content">
+          {{ content }}
         </section>
 
         <aside id="sidebar">
