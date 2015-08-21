@@ -5,11 +5,12 @@ layout: post
 1. [ ] asdfjalsdjfalsdf asdlfjasldf 
 2. [ ] asdfjalsdjfalsdf asdlfjasldf 
 
-| Name | Description          |
+| Name | **Description**          |
 | ------------- | ----------- |
 | Help      | ~~Display the~~ help window.|
 | Close     | _Closes_ a window     |
 
+---
 
 | Left-Aligned  | Center Aligned  | Right Aligned |
 | :------------ |:---------------:| -----:|
