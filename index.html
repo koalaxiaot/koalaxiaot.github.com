@@ -5,8 +5,11 @@ title: 考拉小T
 
 <div id="home">
   {% for post in site.posts %}
-    <h3>{{ post.title }}</h3>
-    <p>{{ post.excerpt }}</p>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <h6>{{ post.date | date_to_string }}</h6>
+
+    <div>{{ post.excerpt }}</div>
+    <a href="post.url">... View More ...</a>
   {% endfor %}
   <h3>Blog Posts</h3>
   <ul class="posts">
@@ -14,12 +17,4 @@ title: 考拉小T
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-</div>
-
-<div>
-<script>
- {% for post in site.posts %}
-   console.log(JSON.parse({{ post }}));
- {% endfor %}
-</script>
 </div>
