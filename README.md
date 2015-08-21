@@ -1,5 +1,4 @@
-# koalaxiaot.github.io
-My GitHub Page
+##My GitHub Page
 
 - [x] 2015/08/21 GitHub + Jeklly + Markdown 第一天
   - [x] 选择一个中意的主题
