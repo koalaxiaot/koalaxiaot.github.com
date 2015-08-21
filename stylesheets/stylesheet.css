@@ -776,6 +776,7 @@ dl dd {
     font-size: 30px;
   }
   #main-content {
+  	font-family:"Microsoft YaHei";
     width: 490px;
   }
   #main-content h1:before,
