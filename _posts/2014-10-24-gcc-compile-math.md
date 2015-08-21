@@ -31,7 +31,7 @@ collect2: ld returned 1 exit status
 gcc默认是调用 glibc.so 库文件，-lc 是默认选项，math位于 glibm.so 中，因此需要添加 -lm 参数指定。
 
 {% highlight shell-session %}
-[root@koalaxiaot c]# gcc math.c -o math -lm     //添加了-lm参数
+[root@koalaxiaot c]# gcc math.c -o math -lm
 [root@koalaxiaot c]# ./math 
 sin(pi/2)=1.000000
 ln1=0.000000
