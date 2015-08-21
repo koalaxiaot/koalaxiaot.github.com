@@ -34,3 +34,9 @@ function test() {
 	  console.log("notice the blank line before this function?");
 }
 ```
+
+- [ ] a bigger project
+  - [ ] first subtask #1234
+  - [ ] follow up subtask #4321
+- [x] final subtask cc @mention
+- [ ] a separate task
