@@ -10,7 +10,7 @@ category: Linux
 
 **/etc/logrotate.d/nginx**
 
-{% highlight %}
+{% highlight shell-session %}
 /usr/local/nginx/logs/access.log
 /usr/local/nginx/logs/error.log
 {
@@ -61,7 +61,7 @@ running postrotate script
 
 **/etc/logrotate.d/tomcat**
 
-{% highlight %}
+{% highlight shell-session %}
 /usr/local/tomcat/logs/catalina.out
 {
   daily
