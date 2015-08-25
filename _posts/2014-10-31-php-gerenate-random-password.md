@@ -48,7 +48,7 @@ echo "\n";
 
 测试如下，代码中我们生成了 4个小写、2个大写、4个数字、2个特殊字符组成的密码。
 
-{% highlight shell-sesion %}
+{% highlight shell-session %}
 [root@koalaxiaot php]# php generate_pwd.php 
 qQ$2Ex9u3a%8
 {% endhighlight %}
