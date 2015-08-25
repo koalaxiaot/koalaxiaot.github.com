@@ -5,8 +5,10 @@ title: 考拉小T
 
 <div id="home">
   {% for post in site.posts %}
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p><small>{{ post.date | date_to_string }}</small><p>
-    <div class="content">{{ post.content }}</div>
+    <div class="content">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p><small>{{ post.date | date_to_string }}</small><p>
+      <div>{{ post.content }}</div>
+    </div>
   {% endfor %}
 </div>
