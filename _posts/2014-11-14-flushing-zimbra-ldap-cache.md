@@ -16,7 +16,7 @@ category: Linux
 
 zimbra的ldap关于account的缓存默认是15分钟，20000个。
 
-根据文档，是需要手动执行命令 zmprov flushCache account 刷新，这样很不方便，我们无法知道用户什么时候调用程序接口修改了ldap。
+根据文档，是需要手动执行命令 `zmprov flushCache account` 刷新，这样很不方便，我们无法知道用户什么时候调用程序接口修改了ldap。
 
 于是考虑修改系统配置，将缓存大小设置为0，关闭缓存。修改ldap_cache_account_maxsize参数
 
