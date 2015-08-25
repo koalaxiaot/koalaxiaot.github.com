@@ -16,7 +16,7 @@ Enabled services read from cache. Service list may be inaccurate.
 	ldap_url and ldap_master_url cannot be the same on an ldap replica
 {% endhighlight %}
 
-经过排查发现是 /opt/zimbar/conf/localconfig.xml 文件权限问题，因为之前已root用户修改了这个文件，导致文件所有者和所属组变为了root。
+经过排查发现是 `/opt/zimbar/conf/localconfig.xml` 文件权限问题，因为之前已root用户修改了这个文件，导致文件所有者和所属组变为了root。
 
 于是修改所有者说数组
 

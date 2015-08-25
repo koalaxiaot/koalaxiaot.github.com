@@ -4,7 +4,7 @@ title: PHP获取命令行参数
 category: PHP
 ---
 
-有时需要在linux的shell环境下测试php脚本，需要调用参数，使用到的是PHP的 `$_SERVER` 预定义变量。
+有时需要在linux的shell环境下测试PHP脚本，需要调用参数，使用到的是PHP的 `$_SERVER` 预定义变量。
 
 {% highlight php linenos %}
 <?php
