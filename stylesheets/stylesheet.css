@@ -479,8 +479,7 @@ header h2 {
 
 .inner {
   position: relative;
-  /**width: 940px;**/
-  width: 1150px;
+  width: 940px;
   margin: 0 auto;
 }
 
@@ -491,8 +490,7 @@ header h2 {
 
 #main-content {
   float: left;
-  /**width: 690px;**/
-  width: 800px;
+  width: 690px;
 }
 
 #main-content img {
@@ -501,8 +499,7 @@ header h2 {
 
 aside#sidebar {
   float: right;
-  /**width: 200px;**/
-  width: 240px;
+  width: 200px;
   min-height: 504px;
   padding-left: 20px;
   font-size: 12px;
@@ -778,25 +775,8 @@ dl dd {
   header h2 {
     font-size: 30px;
   }
-  /**
   #main-content {
     width: 490px;
-  }
-  **/
-  #main-content,
-  aside#sidebar {
-    float: none;
-    width: 100% ! important;
-  }
-  aside#sidebar {
-    min-height: 0;
-    padding: 20px 0;
-    margin-top: 20px;
-    background-image: none;
-    border-top: solid 1px #ddd;
-  }
-  aside#sidebar a.button {
-    display: none;
   }
   #main-content h1:before,
   #main-content h2:before,
