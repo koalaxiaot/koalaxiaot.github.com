@@ -8,7 +8,7 @@ category: PHP
 
 以下代码可实现不同类型密码强度的生成，generate_password($length, $type)函数，可设置长度和类型这2个参数来生成length长度的type类型的随机字符。
 
-{% highlight php linenos%}
+{% highlight php linenos %}
 <?php
 function generate_password($length,$type) {
   $lowers = 'abcdefghijklmnopqrstuvwxyz';   //小写字母集
@@ -48,7 +48,7 @@ echo "\n";
 
 测试如下，代码中我们生成了 4个小写、2个大写、4个数字、2个特殊字符组成的密码。
 
-{% highlight shell-sesion%}
+{% highlight shell-sesion %}
 [root@koalaxiaot php]# php generate_pwd.php 
 qQ$2Ex9u3a%8
 {% endhighlight %}
