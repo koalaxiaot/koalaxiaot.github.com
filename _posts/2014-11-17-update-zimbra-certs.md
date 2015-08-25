@@ -21,4 +21,4 @@ Unable to determine enabled services. Cache is out of date or doesn't exist.
 [root@mailtest zimbra]#/opt/zimbra/bin/zmcertmgr viewdeployedcrt
 {% endhighlight %}
 
-最后一条命令查看当前的证书，查看notAfter值，可以看到证书过期时间~
+最后一条命令查看当前的证书，查看 `notAfter` 值，可以看到证书过期时间~
