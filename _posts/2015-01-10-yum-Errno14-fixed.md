@@ -14,12 +14,12 @@ http://balabala/repodata/repomd.xml: [Errno 14] problem making ssl connection
 Trying other mirror.
 http://balabala/repodata/repomd.xml: [Errno 14] problem making ssl connection
 Trying other mirror.
-{% endhighlight%}
+{% endhighlight %}
 
 排查应该是ssl证书问题有关，网上查了资料发现需要安装 **ca-certificates** 才行。
 
 {% highlight shell-session %}
 [root@koalaxiaot yum.repos.d]# yum install ca-certificates -y
-{% endhighlight%}
+{% endhighlight %}
 
 之后就可以正常使用了~
