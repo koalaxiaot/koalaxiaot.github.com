@@ -1,6 +1,7 @@
 <div>
-     <script>
-       var a = "{{ site.categories }}";
-       console.log(JSON.parse(a));
-     </script>
+  <ul>
+    {% for cat in site.categories %}
+      <li>{{ cat| fist }} ({{ cat | last | size }})</li>
+    {% endfor %}
+  </ul>
 </div>
