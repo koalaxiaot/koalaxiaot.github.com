@@ -1,7 +1,7 @@
 <div>
  <ul>
    {% for cat in site.categories %}
-   <li>{{cat}}</li>
+   <li><script>console.debug({{cat}});</script></li>
    {% endfor %}
  </ul> 
 </div>
