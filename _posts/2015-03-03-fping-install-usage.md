@@ -54,7 +54,7 @@ Usage: fping [options] [targets...]
   targets    list of targets to check (if no -f specified)
 {% endhighlight %}
 
-####常用参数：
+#### 常用参数：
 
 **-a** 显示存活(ping可达)的主机
 
@@ -68,7 +68,7 @@ Usage: fping [options] [targets...]
 
 **-f file** 指定从文件中读取ip地址，不可与-g同时使用，参考基本用法3
 
-####基本用法 1
+#### 基本用法 1
 
 `# fping IP1 IP2 IP3 [IPn...]` 即命令后直接接多个想要进行ping的目标IP
 
@@ -89,7 +89,7 @@ ICMP Host Unreachable from 192.168.1.248 for ICMP Echo sent to 192.168.1.20
 
 可以看到1.10是可达的，另外2台主机ping不可达。
 
-####基本用法 2
+#### 基本用法 2
 
 `#fping -g IP1 IP2` ping从IP1到IP2的所有IP
 
@@ -144,7 +144,7 @@ ICMP Host Unreachable from 192.168.1.248 for ICMP Echo sent to 192.168.1.20
       4.191 sec (elapsed real time)
 {% endhighlight %}
 
-####基本用法 3
+#### 基本用法 3
 
 `#fping -f file` 从文件中读取ip进行ping，示例如下
 
