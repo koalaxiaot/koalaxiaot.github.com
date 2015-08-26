@@ -4,6 +4,7 @@ title: 考拉小T
 ---
 
 <div id="home">
+
   {% for post in paginator.posts %}
     <div class="content">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -11,6 +12,7 @@ title: 考拉小T
       <div>{{ post.content }}</div>
     </div>
   {% endfor %}
-</div>
 
-{% include paginator.html %}
+  {% include paginator.html %}
+
+</div>
