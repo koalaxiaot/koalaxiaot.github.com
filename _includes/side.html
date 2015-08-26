@@ -1,8 +1,8 @@
 <div class="widget">
   <h3 class="widget-title">分类目录</h3>
   <ul>
-    {% for cat in site.categories %}
-      <li>{{ cat| first | upcase }} ({{ cat | last | size }})</li>
+    {% for tag in site.tags %}
+      <li>{{ tag | first | upcase }} ({{ tag | last | size }})</li>
     {% endfor %}
   </ul>
 </div>
