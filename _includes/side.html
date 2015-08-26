@@ -1,7 +1,8 @@
 <div>
    {% for cat in site.categories %}
      <script>
-       console.log(JSON.parse({{ cat }}));
+       var a = "{{ cat }}";
+       console.log(JSON.parse(a));
      </script>
    {% endfor %}
 </div>
