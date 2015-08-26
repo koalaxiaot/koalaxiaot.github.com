@@ -874,7 +874,7 @@ dl dd {
 
 /****paginator*****/
 .page-navigator {
-  border-top:1px solid #ddd;
+  border-top:1px solid #eee;
   list-style:none;
   padding:25px 0 0;
   font-size:16px;
@@ -899,4 +899,10 @@ dl dd {
 .page-navigator .current span {
   background:#F8F8F8;
   border-bottom-color:#D26911;
+}
+
+#footer {
+  padding:.1em 0 3.6em;
+  line-height:1.5;
+  color:#999;
 }
