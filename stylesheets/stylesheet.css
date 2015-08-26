@@ -911,6 +911,7 @@ dl dd {
 /*****side widget*******/
 .widget {
 	margin-bottom:30px;
+	font-size: 14px;
 }
 .widget-title,h3{
   color:#6E7173;
