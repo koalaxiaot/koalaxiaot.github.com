@@ -1,7 +1,7 @@
 ---
 layout: post
 title: hping的安装和使用
-category: Linux
+tag: Linux
 ---
 
 之前介绍了一篇关于fping的文章《[fping的安装和使用](/linux/2015/03/03/fping-install-usage.html){:target="_blank"}》，今天介绍另外一个也是ping的加强版工具hping。

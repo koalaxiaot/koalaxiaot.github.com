@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ldap_url and ldap_master_url cannot be the same on an ldap replica 错误解决
-category: Linux
+tag: Linux
 ---
 
 在启动zimbra服务时候碰到了如下错误

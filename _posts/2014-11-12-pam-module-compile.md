@@ -1,7 +1,7 @@
 ---
 layout: post
 title: pam模块编译链接
-category: 'Linux C'
+tag: 'Linux C'
 ---
 
 在用写pam模块编译时，需要执行特定的编译命令，经常忘记参数，特备忘之。

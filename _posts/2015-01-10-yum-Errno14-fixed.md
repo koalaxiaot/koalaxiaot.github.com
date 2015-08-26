@@ -1,7 +1,7 @@
 ---
 layout: post
 title: yum Errno 14 问题解决
-category: Linux
+tag: Linux
 ---
 
 今天在安装openstack的yum源时，出现了如下错误

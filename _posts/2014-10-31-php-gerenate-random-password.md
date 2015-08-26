@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP生成随机密码
-category: PHP
+tag: PHP
 ---
 
 经常会用到生成随机密码或者随机数的问题，以下代码做为备忘。

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 解决zimbra手动修改ldap后缓存问题
-category: Linux
+tag: Linux
 ---
 
 在zimbra使用时，为了方便用户重置密码，后台专门写了程序修改ldap值，但是出现了修改后无法及时生效问题。
