@@ -1,7 +1,7 @@
 <div>
   <ul>
     {% for cat in site.categories %}
-      <li>{{ cat| fist }} ({{ cat | last | size }})</li>
+      <li>{{ cat| first }} ({{ cat | last | size }})</li>
     {% endfor %}
   </ul>
 </div>
