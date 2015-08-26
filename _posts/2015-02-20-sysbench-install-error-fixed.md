@@ -52,7 +52,7 @@ Configured with: autoconf (GNU Autoconf) 2.63
 [root@koala sysbench-0.5]# make && make install
 {% endhighlight %}
 
-注意：如果在make过程中提示 **error: mysql.h: No such file or directory** 报错的话，须先安装 **mysql-devel** 这个依赖(*yum install mysql-devel -y*)，然后重新编译安装即可。
+注意：如果在make过程中提示 **error: mysql.h: No such file or directory** 报错的话，须先安装 **mysql-devel** 这个依赖（ *yum install mysql-devel -y* ），然后重新编译安装即可。
 
 至此，sysbench安装完毕。
 
@@ -60,5 +60,4 @@ Configured with: autoconf (GNU Autoconf) 2.63
 参考文档：
 
 > [维基百科Libtool](http://zh.wikipedia.org/wiki/Libtool){:target="_blank"}
-
 > [sysbench Github地址](https://github.com/akopytov/sysbench){:target="_blank"}
