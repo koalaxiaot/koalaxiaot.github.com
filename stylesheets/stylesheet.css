@@ -871,3 +871,32 @@ dl dd {
   margin-bottom: 30px;
   border-bottom: 1px dashed #ccc;
 }
+
+/****paginator*****/
+.page-navigator {
+  border-top:1px solid #ddd;
+  list-style:none;
+  padding:25px 0 0;
+  font-size:16px;
+}
+.page-navigator li {
+  display:inline-block;
+  margin:0 5px 5px 0;
+}
+.page-navigator a,
+.page-navigator span {
+  display:inline-block;
+  padding:0 10px;
+  height:25px;
+  line-height:25px;
+  padding:5px 9px;
+  border:1px solid #DDD;
+}
+.page-navigator a:hover {
+  background:#F8F8F8;
+  border-bottom-color:#D26911;
+}
+.page-navigator .current span {
+  background:#F8F8F8;
+  border-bottom-color:#D26911;
+}
