@@ -1,7 +1,7 @@
 <div>
  <ul>
    {% for cat in site.categories %}
-   <li><script>console.debug(JSON.parse({{cat}}));</script></li>
+   <li>{{ cat.name }}</li>
    {% endfor %}
  </ul> 
 </div>
