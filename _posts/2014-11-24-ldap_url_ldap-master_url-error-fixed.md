@@ -1,6 +1,6 @@
 ---
 layout: post
-title: zimbra 中 ldap 错误解决
+title: zimbra中ldap错误解决
 tag: Linux
 ---
 

@@ -17,9 +17,6 @@
 
         <ul id="tags__ul">
           <li id="js-label1" class="tags__li tags-btn active">所有文章</li>
-          {% for tag in site.tags %}
-            <li id="js-label2" class="tags__li tags-btn">Linux</li>
-          {% endfor %}
           <li id="js-label2" class="tags__li tags-btn">Linux</li>
           <li id="js-label3" class="tags__li tags-btn">C语言</li>
           <li id="js-label4" class="tags__li tags-btn">PHP</li>
@@ -33,9 +30,6 @@
       </nav> <!-- end #tags -->
 
       <div id="posts-list">
-        <div id="search-form">
-          <p id=search-input">{{ site.subname }}</p>
-        </div>
 
         <nav id="pl__container">
         {% for post in site.posts %}
