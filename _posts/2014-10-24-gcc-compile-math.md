@@ -1,7 +1,7 @@
 ---
 layout: post
 title: gcc编译math.h方法
-tag: 'Linux C'
+tag: 'C语言'
 ---
 
 在用gcc编译C时，碰到了``undefined reference to `sin'``的错误，源代码如下
