@@ -265,6 +265,7 @@ a {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
+  cursor: default;
 }
   #search-input::-webkit-input-placeholder {
     color: #cbcbcb;
