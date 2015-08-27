@@ -1,8 +1,0 @@
-<div class="widget">
-  <h3 class="widget-title">分类目录</h3>
-  <ul>
-    {% for tag in site.tags %}
-      <li>{{ tag | first }} ({{ tag | last | size }})</li>
-    {% endfor %}
-  </ul>
-</div>
