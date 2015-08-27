@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ldap_url and ldap_master_url cannot be the same on an ldap replica 错误解决
+title: zimbra 中 ldap 错误解决
 tag: Linux
 ---
 
