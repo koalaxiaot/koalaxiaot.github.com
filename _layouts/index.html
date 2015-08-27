@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-    <title>{{ page.title }}</title>
-    <meta name="description" content="">
-
+    <title>{{ page.title }} - {{ site.name }}</title>
+    <meta name="description" content="{{ pate.excerpt }}">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
   </head>
   <body>
@@ -27,7 +26,7 @@
           <a href="mailto:{{ site.email }}" id="icon-email" class="tags-btn fontello"></a>
           <a href="/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
         </div>
-      </nav> <!-- end #tags -->
+      </nav>
 
       <div id="posts-list">
         <div id="search-form">
@@ -36,16 +35,21 @@
 
         <nav id="pl__container">
         {% for post in site.posts %}
-          <a class="{{ post.tags }} pl__all" href="{{ post.url }}"><span class="pl__circle"></span><span class="pl__title">{{ post.title }}</span><span class="pl__date">{{ post.date | date: "%b %Y" }}</span></a>
+          <a class="{{ post.tags }} pl__all" href="{{ post.url }}">
+            <span class="pl__circle"></span>
+            <span class="pl__title">{{ post.title }}</span>
+            <span class="pl__date">{{ post.date | date: "%b %Y" }}</span>
+          </a>
         {% endfor %}
         </nav>
-      </div> <!-- end #posts-list -->
-    </aside> <!-- end #sidebar -->
+      </div>
+    </aside>
 
     <div id="post">
+
       <div id="pjax">
         {{ content }}
-      </div> <!-- end #pjax -->
+      </div>
 
       <div id="post__toc-trigger">
         <div id="post__toc">
@@ -53,7 +57,8 @@
           <ul id="post__toc-ul"></ul>
         </div>
       </div>
-    </div> <!-- end #post -->
+
+    </div>
 
     <button id="js-fullscreen"><span id="icon-arrow" class="fontello"></span></button>
 
