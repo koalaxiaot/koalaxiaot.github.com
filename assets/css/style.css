@@ -253,7 +253,8 @@ a {
   height: 100%;
   margin: 0;
   padding: 20px 20px 0;
-  color: #2eb695;
+  color: #cbcbcb;
+  /**color: #2eb695;**/
   font-size: 18px;
   font-family: inherit;
   background: #f7f7f7;
