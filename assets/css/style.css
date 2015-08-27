@@ -289,7 +289,7 @@ a {
   overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
-  top: 65px;
+  top: 85px;
   bottom: 0;
   left: 0;
   right: -1px;
@@ -579,7 +579,7 @@ iframe {
     content: "\e803"; }
 
 #icon-weibo {
-  margin-left: 50px; }
+  margin-left: 30px; }
   #icon-weibo:hover {
     color: #d40220; }
   #icon-weibo:before {
