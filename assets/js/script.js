@@ -117,12 +117,12 @@ function afterPjax() {
 
   // Lazy Loading Disqus
   // http://jsfiddle.net/dragoncrew/SHGwe/1/
-  var ds_loaded = false,
+  var ds_loaded = false;
   window.disqus_shortname = 'koalaxiaot';
   window.disqus_identifier = identifier;
 
   if($('#disqus_thread')){
-    top = $('#disqus_thread').offset().top;
+    var top = $('#disqus_thread').offset().top;
 	}
 
   function check() {
