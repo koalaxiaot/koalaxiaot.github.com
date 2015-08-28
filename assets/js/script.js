@@ -118,7 +118,7 @@ function afterPjax() {
   // Lazy Loading Disqus
   // http://jsfiddle.net/dragoncrew/SHGwe/1/
 
-  if($('#disqus_thread')){
+  if($('#disqus_thread').length > 0){
     var top = $('#disqus_thread').offset().top;
     var ds_loaded = false;
     var identifier = $('#post__title').data('identifier');
