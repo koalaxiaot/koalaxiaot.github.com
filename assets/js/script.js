@@ -118,11 +118,12 @@ function afterPjax() {
   // Lazy Loading Disqus
   // http://jsfiddle.net/dragoncrew/SHGwe/1/
   var ds_loaded = false,
-      top = $('#disqus_thread').offset().top;
-      identifier = $('#post__title').data('identifier');
   window.disqus_shortname = 'koalaxiaot';
   window.disqus_identifier = identifier;
-  console.debug(identifier);
+
+  if($('#disqus_thread')){
+    top = $('#disqus_thread').offset().top;
+	}
 
   function check() {
     if ( !ds_loaded && container.scrollTop() + container.height() > top ) {
