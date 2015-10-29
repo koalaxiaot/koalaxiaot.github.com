@@ -17,28 +17,28 @@ Tablib是一个处理表格数据的Python库，支持很多种导出格式，�
 # -*- coding: utf-8 -*-
 #
 
-import tablib    #引入tablib库
+import tablib                         #引入tablib库
 
 data = tablib.Dataset()
 
-data.headers = ('name', 'age')    #定义标题部分
+data.headers = ('name', 'age')        #定义标题部分
 
-users = []                        #数据
+users = []                            #数据
 users.append((u'小明','20'))
 users.append(('xiaohong','18'))
 users.append(('koala','23'))
 
 for (name, age) in users:
-	data.append((name, age))      #使用append方法，添加到data中
+    data.append((name, age))          #使用append方法，添加到data中
 
-	print '------ CSV  OUTPUT ------'
-	print data.csv
-	print '------ JSON OUTPUT ------'
-	print data.json
+    print '------ CSV  OUTPUT ------'
+    print data.csv
+    print '------ JSON OUTPUT ------'
+    print data.json
 
-	fp = open('output.xls', 'w')  #写入到外部文件中
-	fp.write(data.xls)            #因xls(x)为二进制文件，所以直接print会是乱码
-	fp.close()
+    fp = open('output.xls', 'w')      #写入到外部文件中
+    fp.write(data.xls)                #因xls(x)为二进制文件，所以直接print会是乱码
+    fp.close()
 {% endhighlight %}
 
 在命令行执行结果如下
