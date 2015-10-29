@@ -29,4 +29,4 @@ kernel /vmlinuz-2.6.32-431.17.1.el6.x86_64 .... rhgb quiet biosdevname=0    //�
 
 eth1的修改方法同eth0
 
-> biosdevname参考：[Support for biosdevname in Red Hat Enterprise Linux 6.1](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/6.1_Release_Notes/ar01s01.html){:target="_blank"}
+> biosdevname参考：[Support for biosdevname in Red Hat Enterprise Linux 6.1](https://access.redhat.com/articles/53579){:target="_blank"}
