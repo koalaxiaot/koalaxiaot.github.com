@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用tablib导出Excel数据
+title: 使用Tablib导出Excel数据
 tag: Python
 ---
 
@@ -17,7 +17,7 @@ Tablib是一个处理表格数据的Python库，支持很多种导出格式，�
 # -*- coding: utf-8 -*-
 #
 
-import tablib                         #引入tablib库
+import tablib                         #引入Tablib库
 
 data = tablib.Dataset()
 
