@@ -6,6 +6,12 @@ tag: Python
 
 最近在项目中需要程序去自动抓取svn服务的日志记录，网上搜寻半天，感觉pysvn这个库不错，挺适合来使用，就拿来一试。
 
+# pysvn安装
+
+可以直接`yum install pysvn -y`或者`pip install pysvn`
+
+# 使用
+
 先看示例：
 
 {% highlight python linenos %}
@@ -57,10 +63,15 @@ if __name__ == '__main__':
 返回的日志信息中，如果需要查看详细的提交日志信息，可以添加`discover_changed_paths=True`，这样就可以查看到这次提交日志的详细文件信息，包括path，action，copyfrom_path，copyfrom_revision。
 
 如果需要查看某个时间段的日志记录，可以修改对应的`revision_start`和`revision_end`参数。比如
+
 `revision_end = pysvn.Revision( pysvn.opt_revision_kind.date, time.time() )`
+
 本示例中是通过最后的head来取limit条记录
+
 `pysvn.Revision( pysvn.opt_revision_kind.head )`
+
 如果需要根据提交的commit ID来获取，可以
+
 `pysvn.Revision( pysvn.opt_revision_kind.number, 4721 )`
 
 更详细的使用方法，可以查看文档。
