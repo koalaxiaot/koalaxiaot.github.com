@@ -19,6 +19,7 @@ tag: Python
 # -*- coding:utf-8 -*-
 
 import pysvn
+import time
 
 class svnSync:
 
