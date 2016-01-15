@@ -9,6 +9,11 @@ tag: Python
 先看示例：
 
 {% highlight python linenos %}
+#!/usr/bin/python
+# -*- coding:utf-8 -*-
+
+import pysvn
+
 class svnSync:
 
     def __init__(self, url):
@@ -24,6 +29,7 @@ class svnSync:
 
         try:
             client = pysvn.Client()
+            #参考 http://pysvn.tigris.org/docs/pysvn_prog_ref.html#pysvn_client_callback_get_login
             client.callback_get_login = self.svn_login
 
             # 参考 http://pysvn.tigris.org/docs/pysvn_prog_ref.html#pysvn_client_log
@@ -45,5 +51,18 @@ if __name__ == '__main__':
     url = 'http://svn.example.com/svn_repo'
     svnSync(url)
 {% endhighlight%}
+
+核心是`client.log()`函数
+
+返回的日志信息中，如果需要查看详细的提交日志信息，可以添加`discover_changed_paths=True`，这样就可以查看到这次提交日志的详细文件信息，包括path，action，copyfrom_path，copyfrom_revision。
+
+如果需要查看某个时间段的日志记录，可以修改对应的`revision_start`和`revision_end`参数。比如
+`revision_end = pysvn.Revision( pysvn.opt_revision_kind.date, time.time() )`
+本示例中是通过最后的head来取limit条记录
+`pysvn.Revision( pysvn.opt_revision_kind.head )`
+如果需要根据提交的commit ID来获取，可以
+`pysvn.Revision( pysvn.opt_revision_kind.number, 4721 )`
+
+更详细的使用方法，可以查看文档。
 
 > [pysvn手册](http://pysvn.tigris.org/docs/pysvn.html){:target="blank"}
