@@ -53,5 +53,3 @@ let y = 2;
 window.y // undefined
 
 {% endhighlight%}
-
-> [pysvn手册](http://pysvn.tigris.org/docs/pysvn.html){:target="blank"}
