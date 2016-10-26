@@ -10,7 +10,7 @@ tag: Linux
 
 **/etc/logrotate.d/nginx**
 
-{% highlight shell-session %}
+```
 /usr/local/nginx/logs/access.log
 /usr/local/nginx/logs/error.log
 {
@@ -23,13 +23,13 @@ tag: Linux
     kill -USR1 $(cat /usr/local/nginx/logs/nginx.pid)
   endscript
 }
-{% endhighlight %}
+```
 
 每天会进行切割nginx的**access.log**以及**error.log**，总共会保留最近15天的日志。切割完会执行 `kill -USR1` 命令来使得nginx重新打开日志。
 
 以下为执行过程样例：
 
-{% highlight shell-session %}
+```
 [root@koalaxiaot logs]# logrotate -vf /etc/logrotate.d/nginx 
 reading config file /etc/logrotate.d/nginx
 reading config info for /usr/local/nginx/logs/access.log
@@ -57,11 +57,11 @@ glob finding old rotated logs failed
 renaming /usr/local/nginx/logs/access.log to /usr/local/nginx/logs/access.log-20141218
 renaming /usr/local/nginx/logs/error.log to /usr/local/nginx/logs/error.log-20141218
 running postrotate script
-{% endhighlight %}
+```
 
 **/etc/logrotate.d/tomcat**
 
-{% highlight shell-session %}
+```
 /usr/local/tomcat/logs/catalina.out
 {
   daily
@@ -70,13 +70,13 @@ running postrotate script
   rotate 15
   copytruncate
 }
-{% endhighlight %}
+```
 
 每天会切割tomcat的**catalina.out**日志，保留最近15天日志，每次切割时会先拷贝一份备份，然后清空当前日志（copytruncate）。
 
 以下为执行过程样例：
 
-{% highlight shell-session %}
+```
 [root@koalaxiaot logs]# logrotate -vf /etc/logrotate.d/tomcat 
 reading config file /etc/logrotate.d/tomcat
 reading config info for /usr/local/tomcat/logs/catalina.out
@@ -95,4 +95,4 @@ glob pattern '-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'
 glob finding old rotated logs failed
 copying /usr/local/tomcat/logs/catalina.out to /usr/local/tomcat/logs/catalina.out-20141218
 truncating /usr/local/tomcat/logs/catalina.out
-{% endhighlight %}
+```

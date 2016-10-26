@@ -8,7 +8,7 @@ tag: Linux
 
 现象是在 `$zmcontral start` 过程中启动都正常成功，但是 查看服务状态时发现mta是stopped状态
 
-{% highlight shell-session %}
+```
 [zimbra@test1 ~]$ zmcontrol status
 Host test1.zimbratest.com
 antispam                Running
@@ -20,16 +20,17 @@ mailbox                 Running
 memcached               Running
 mta                     Stopped
   postfix is not running
-{% endhighlight %}
+```
+
 查看 **/var/spool/mail/zimbra** 中发现提示
 
 **postqueue: fatal: Queue report unavailable - mail system is down**
 
 后来发现原来本机的sendmail服务已经启动，占用了25端口导致。于是杀掉sendmail服务
 
-{% highlight shell-session %}
+```sh
 [root@test1 ~]# pkill sendmail
 [root@test1 ~]# chkconfig sendmail off
-{% endhighlight %}
+```
 
 之后重启zimbra，服务状态都正常了。

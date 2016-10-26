@@ -20,12 +20,12 @@ zimbra的ldap关于account的缓存默认是15分钟，20000个。
 
 于是考虑修改系统配置，将缓存大小设置为0，关闭缓存。修改ldap_cache_account_maxsize参数
 
-{% highlight shell-session %}
+```
 [zimbra@mailtest ~]$ zmlocalconfig -e ldap_cache_account_maxsize=0
 [zimbra@mailtest ~]$ zmmailboxdctl reload      //须zimbra用户执行，否则报错
 Stopping mailboxd...done.
 Starting mailboxd...done.
-{% endhighlight %}
+```
 
 修改完参数后，须重启服务，经验证，只需重启zmmailboxdctl即可，因为重启全部服务时间太久，影响线上服务。
 

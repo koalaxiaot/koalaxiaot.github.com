@@ -6,10 +6,10 @@ tag: 'C语言'
 
 在用写pam模块编译时，需要执行特定的编译命令，经常忘记参数，特备忘之。
 
-{% highlight shell-session %}
+```
 [root@koalaxiaot c]# gcc -fPIC -c pam.c
 [root@koalaxiaot c]# ld -x --shared -o /lib64/security/mypam.so pam.o
-{% endhighlight %}
+```
 
 pam.c为自己写的pam模块
 

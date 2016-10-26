@@ -19,8 +19,8 @@ tag: Javascript
 3. 存在temporal dead zone，在代码块中，let之前，变量都属于不可调用区域
 4. 不允许重复声明
 
-{% highlight javascript linenos %}
 
+```javascript
 {
     let x = 1;
     var y = 2;
@@ -28,9 +28,7 @@ tag: Javascript
 
 console.log(y);
 console.log(x); // ReferenceError: x is not defined
-
-{% endhighlight%}
-
+```
 
 ### const
 
@@ -44,12 +42,10 @@ let/const 声明的全局变量，不属于顶层对象的属性。
 
 在console中执行如下代码
 
-{% highlight javascript linenos %}
-
+```javascript
 var x = 1;
 window.x // 1
 
 let y = 2;
 window.y // undefined
-
-{% endhighlight%}
+```

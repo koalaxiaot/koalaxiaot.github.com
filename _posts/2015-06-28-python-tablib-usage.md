@@ -12,7 +12,7 @@ Tablib是一个处理表格数据的Python库，支持很多种导出格式，�
 
 直接看示例：
 
-{% highlight python linenos %}
+```python
 #!/bin/env python
 # -*- coding: utf-8 -*-
 #
@@ -39,11 +39,11 @@ for (name, age) in users:
     fp = open('output.xls', 'w')      #写入到外部文件中
     fp.write(data.xls)                #因xls(x)为二进制文件，所以直接print会是乱码
     fp.close()
-{% endhighlight %}
+```
 
 在命令行执行结果如下
 
-{% highlight shell-session %}
+```
 [root@koala py]# python tabExcel.py 
 ------ CSV  OUTPUT ------
 name,age
@@ -57,7 +57,7 @@ koala,23
 	{"name": "xiaohong", "age": "18"}, 
 	{"name": "koala", "age": "23"}
 ]
-{% endhighlight %}
+```
 
 打开`output.xls`可以看到
 

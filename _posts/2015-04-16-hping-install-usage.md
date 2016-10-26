@@ -10,7 +10,7 @@ tag: Linux
 
 从github下载安装hping
 
-{% highlight shell-session %}
+```sh
 [root@koala downloads]# git clone https://github.com/antirez/hping.git
 Initialized empty Git repository in /usr/local/downloads/hping/.git/
 remote: Counting objects: 225, done.
@@ -42,13 +42,13 @@ now you can try `make'
 [root@koala hping]# yum install libpcap-devel tcl-devel -y
 [root@koala hping]# ln -s /usr/include/pcap-bpf.h /usr/include/net/bpf.h
 [root@koala hping]# make && make install
-{% endhighlight %}
+```
 
 其中安装了依赖包 **libpcap-devel**、**tcl-devel** 以及对应创建了一个软链接。
 
 使用示例
 
-{% highlight shell-session %}
+```sh
 [root@koala ~]# hping -p 80 -c 3 -S www.baidu.com
 HPING www.baidu.com (eth0 61.135.169.121): S set, 40 headers + 0 data bytes
 len=46 ip=61.135.169.121 ttl=56 id=27868 sport=80 flags=SA seq=0 win=512 rtt=1.6 ms
@@ -58,7 +58,7 @@ len=46 ip=61.135.169.121 ttl=56 id=59274 sport=80 flags=SA seq=2 win=512 rtt=2.9
 --- www.baidu.com hping statistic ---
 3 packets tramitted, 3 packets received, 0% packet loss
 round-trip min/avg/max = 1.6/2.0/2.9 ms
-{% endhighlight %}
+```
 
 上例我们对baidu的80端口进行了3次hping检测。
 

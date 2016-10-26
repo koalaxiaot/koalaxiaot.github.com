@@ -14,7 +14,7 @@ tag: Python
 
 先看示例：
 
-{% highlight python linenos %}
+```python
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
 
@@ -57,7 +57,7 @@ class svnSync:
 if __name__ == '__main__':
     url = 'http://svn.example.com/svn_repo'
     svnSync(url)
-{% endhighlight%}
+```
 
 核心是`client.log()`函数
 

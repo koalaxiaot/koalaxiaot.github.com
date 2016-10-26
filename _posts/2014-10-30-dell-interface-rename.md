@@ -8,24 +8,23 @@ tag: Linux
 
 1\. 修改内核启动参数，在kernel后加入 biosdevname=0, 如下修改 /etc/grub.conf
 
-{% highlight shell-session %}
+```
 kernel /vmlinuz-2.6.32-431.17.1.el6.x86_64 .... rhgb quiet biosdevname=0    //省略了部分参数
-{% endhighlight %}
+```
 
 2\. 修改网卡配置文件，包括文件名和文件内DEVICE名称
 
-{% highlight shell-session %}
+```
 [root@koalaxiaot ~]# mv /etc/sysconfig/network-scripts/ifcfg-em1 /etc/sysconfig/network-scripts/ifcfg-eth0
 [root@koalaxiaot ~]# sed -i 's/DEVICE=.*$/DEVICE=eth0/g' /etc/sysconfig/network-scripts/ifcfg-eth0
-{% endhighlight %}
+```
 
 3\. 清空udev规则
 
 
-{% highlight shell-session %}
+```
 [root@koalaxiaot ~]# echo > /etc/udev/rules.d/70-persistent-net.rules
-{% endhighlight %}
-
+```
 
 eth1的修改方法同eth0
 

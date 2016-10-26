@@ -6,18 +6,18 @@ tag: Linux
 
 到github上下载最新版的sysbench并安装
 
-{% highlight shell-session %}
+```
 [root@koala ~]# wget https://github.com/akopytov/sysbench/archive/0.5.zip
 [root@koala ~]# unzip 0.5.zip
 [root@koala ~]# cd sysbench-0.5/
 [root@koala sysbench-0.5]# ./autogen.sh 
 automake 1.10.x (aclocal) wasn't found, exiting
-{% endhighlight %}
+```
 
 提示报错: ***automake 1.10.x (aclocal) wasn’t found， exiting***
 需要安装 **libtool** 这个包依赖，libtool主要包括 **autoconf** 和 **automake** 这2个工具, 当然可以只暂时安装 **automake** 这个包，不过后续会继续报错，所以就直接安装了 **libtool** 更直接些。使用yum安装并继续。
 
-{% highlight shell-session %}
+```
 [root@koala sysbench-0.5]# yum install libtool -y
 
 [root@koala sysbench-0.5]# ./autogen.sh 
@@ -43,14 +43,14 @@ sysbench/Makefile.am: installing `config/depcomp'
 Libtoolized with: libtoolize (GNU libtool) 2.2.6b
 Automade with: automake (GNU automake) 1.11.1
 Configured with: autoconf (GNU Autoconf) 2.63
-{% endhighlight %}
+```
 
 成功生成了configure文件，接下来就是正常的编译安装了
 
-{% highlight shell-session %}
+```
 [root@koala sysbench-0.5]# ./configure
 [root@koala sysbench-0.5]# make && make install
-{% endhighlight %}
+```
 
 注意：如果在make过程中提示 **error: mysql.h: No such file or directory** 报错的话，须先安装 **mysql-devel** 这个依赖（ *yum install mysql-devel -y* ），然后重新编译安装即可。
 

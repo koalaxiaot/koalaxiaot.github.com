@@ -8,16 +8,16 @@ tag: Linux
 
 ###下载安装fping
 
-{% highlight shell-session %}
+```
 [root@koala ~]# wget http://www.fping.org/dist/fping-3.10.tar.gz
 [root@koala ~]# tar xvzf fping-3.10.tar.gz
 [root@koala ~]# cd fping-3.10
 [root@koala fping-3.10]# ./configure && make && make install
-{% endhighlight %}
+```
 
 安装完成后系统中会有fping的命令，查看fping的帮助:
 
-{% highlight shell-session %}
+```
 [root@koala fping-3.10]# fping -h
 
 Usage: fping [options] [targets...]
@@ -52,7 +52,7 @@ Usage: fping [options] [targets...]
   -u         show targets that are unreachable
   -v         show version
   targets    list of targets to check (if no -f specified)
-{% endhighlight %}
+```
 
 ### 常用参数：
 
@@ -74,7 +74,7 @@ Usage: fping [options] [targets...]
 
 如 **ping 192.168.1.3 192.168.1.10 192.168.1.20** 这3台主机
 
-{% highlight shell-session %}
+```
 [root@koala ~]# fping 192.168.1.3 192.168.1.10 192.168.1.20
 192.168.1.10 is alive
 ICMP Host Unreachable from 192.168.1.248 for ICMP Echo sent to 192.168.1.3
@@ -85,7 +85,7 @@ ICMP Host Unreachable from 192.168.1.248 for ICMP Echo sent to 192.168.1.20
 ICMP Host Unreachable from 192.168.1.248 for ICMP Echo sent to 192.168.1.20
 192.168.1.3 is unreachable
 192.168.1.20 is unreachable
-{% endhighlight %}
+```
 
 可以看到1.10是可达的，另外2台主机ping不可达。
 
@@ -95,7 +95,7 @@ ICMP Host Unreachable from 192.168.1.248 for ICMP Echo sent to 192.168.1.20
 
 如 **ping 192.168.1.3-192.168.1.10** 的所有主机
 
-{% highlight shell-session %}
+```
 [root@koala ~]# fping -aqs -g 192.168.1.3 192.168.1.10
 192.168.1.6
 192.168.1.7
@@ -116,13 +116,13 @@ ICMP Host Unreachable from 192.168.1.248 for ICMP Echo sent to 192.168.1.20
   1.71 ms (avg round trip time)
   2.25 ms (max round trip time)
       4.239 sec (elapsed real time)
-{% endhighlight %}
+```
 
 可以看到有4台主机可以ping通，分别是 1.6/1.7/1.8/1.10
 
 另外也支持ping整个网段，如下
 
-{% highlight shell-session %}
+```
 [root@koala ~]# fping -aqs -g 192.168.1.0/29
 192.168.1.1
 192.168.1.2
@@ -142,13 +142,13 @@ ICMP Host Unreachable from 192.168.1.248 for ICMP Echo sent to 192.168.1.20
   7.34 ms (avg round trip time)
   19.8 ms (max round trip time)
       4.191 sec (elapsed real time)
-{% endhighlight %}
+```
 
 ### 基本用法 3
 
 `#fping -f file` 从文件中读取ip进行ping，示例如下
 
-{% highlight shell-session %}
+```
 [root@koala ~]# cat ips.txt
 192.168.1.3
 192.168.1.4
@@ -171,7 +171,7 @@ ICMP Host Unreachable from 192.168.1.248 for ICMP Echo sent to 192.168.1.20
   1.20 ms (avg round trip time)
   1.20 ms (max round trip time)
       4.116 sec (elapsed real time)
-{% endhighlight %}
+```
 
 参考文档：
 
