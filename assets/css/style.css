@@ -619,7 +619,7 @@ iframe {
     transform: translateX(-585px); } }
 
 #pjax.fullscreen {
-  max-width: 800px;
+  max-width: 80%;
   margin: 0 auto; }
 
 #js-fullscreen, #nprogress .spinner-icon {
