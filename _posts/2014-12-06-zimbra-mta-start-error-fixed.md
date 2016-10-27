@@ -1,7 +1,7 @@
 ---
 layout: post
 title: zimbra mta 启动失败问题解决
-tag: Linux
+tag: Linux及运维
 ---
 
 今天在测试安装新的zimbra时，出现了mta启动失败的情况。

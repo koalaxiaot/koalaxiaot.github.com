@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用pysvn获取提交日志记录
-tag: Python
+tag: 后端技术
 ---
 
 最近在项目中需要程序去自动抓取svn服务的日志记录，网上搜寻半天，感觉pysvn这个库不错，挺适合来使用，就拿来一试。

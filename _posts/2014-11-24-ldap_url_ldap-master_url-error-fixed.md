@@ -1,7 +1,7 @@
 ---
 layout: post
 title: zimbra中ldap错误解决
-tag: Linux
+tag: Linux及运维
 ---
 
 在启动zimbra服务时候碰到了如下错误

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用parse_ini_file()读取配置文件
-tag: PHP
+tag: 后端技术
 ---
 
 项目开发中使用php时，遇到需要定义一些全局环境变量的问题，经常是放到一个配置文件中，如 `config.ini`，然后使用 `parse_ini_file()`将其引用起来。示例如下，

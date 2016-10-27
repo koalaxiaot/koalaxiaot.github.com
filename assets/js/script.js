@@ -7,11 +7,10 @@ if ($(window).width() <= 1280) {
 
 // Variables
     tag1       = $('.pl__all'),
-    tag2       = $('.Linux'),
-    tag3       = $('.C语言'),
-    tag4       = $('.PHP'),
-    tag5       = $('.Python');
-    tag6       = $('.岁月无声');
+    tag2       = $('.Linux及运维'),
+    tag3       = $('.前端技术'),
+    tag4       = $('.后端技术');
+    tag5       = $('.岁月无声');
 var sidebar    = $('#sidebar'),
     container  = $('#post'),
     content    = $('#pjax'),
@@ -25,7 +24,7 @@ var clickHandler = function(k) {
     window['tag'+k].delay(50).fadeIn(350);
   }
 };
-for (var i = 1; i <= 6; i++) {
+for (var i = 1; i <= 5; i++) {
   $('#js-label' + i).on('click', clickHandler(i));
 }
 

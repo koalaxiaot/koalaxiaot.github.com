@@ -1,7 +1,7 @@
 ---
 layout: post
 title: nginx和tomcat日志切割
-tag: Linux
+tag: Linux及运维
 ---
 
 之前源码安装了nginx和tomcat，服务运行了一段时间，发现访问日志达到了2G多，为了方便以后查看和管理方便，于是用logrotate进行日志切割。

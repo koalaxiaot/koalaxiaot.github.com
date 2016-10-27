@@ -1,7 +1,7 @@
 ---
 layout: post
 title: sysbench安装排错
-tag: Linux
+tag: Linux及运维
 ---
 
 到github上下载最新版的sysbench并安装

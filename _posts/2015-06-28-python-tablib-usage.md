@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用Tablib导出Excel数据
-tag: Python
+tag: 后端技术
 ---
 
 Tablib是一个处理表格数据的Python库，支持很多种导出格式，如JSON、HTML、CSV、TSV、YAML、Dict、Excel。

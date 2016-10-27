@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DELL服务器网卡命名问题
-tag: Linux
+tag: Linux及运维
 ---
 
 最近在DELL服务器上安装centos，发现网卡名称为em1、em2，与我们平时使用的eth0不同。为了使用方便，修改为eth0，eth1，方法如下

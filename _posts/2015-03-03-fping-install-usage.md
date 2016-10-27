@@ -1,7 +1,7 @@
 ---
 layout: post
 title: fping的安装和使用
-tag: Linux
+tag: Linux及运维
 ---
 
 简单说，fping是ping命令的加强版，可以同时ping多台主机，更多信息可参考文末的参考文档。

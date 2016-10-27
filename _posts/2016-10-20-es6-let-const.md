@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ES6学习笔记-let/const
-tag: Javascript
+tag: 前端技术
 ---
 
 ### 块级作用域

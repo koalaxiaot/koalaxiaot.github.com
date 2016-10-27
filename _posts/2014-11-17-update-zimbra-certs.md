@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 手动更新zimbra证书
-tag: Linux
+tag: Linux及运维
 ---
 
 zimbra的证书过期，有时会导致一些意想不到的问题，比如命令无法执行，ldap无法启动等。
