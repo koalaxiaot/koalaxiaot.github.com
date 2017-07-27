@@ -175,5 +175,5 @@ ICMP Host Unreachable from 192.168.1.248 for ICMP Echo sent to 192.168.1.20
 
 参考文档：
 
-> [fping官方站点](http://www.fping.org/){:target="_blank"}
+> [fping官方站点](http://www.fping.org/){:target="_blank"}  
 > [Github 地址](https://github.com/schweikert/fping){:target="_blank"}

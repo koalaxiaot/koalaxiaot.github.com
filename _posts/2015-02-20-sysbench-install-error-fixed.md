@@ -59,5 +59,5 @@ Configured with: autoconf (GNU Autoconf) 2.63
 
 参考文档：
 
-> [维基百科Libtool](http://zh.wikipedia.org/wiki/Libtool){:target="_blank"}
+> [维基百科Libtool](http://zh.wikipedia.org/wiki/Libtool){:target="_blank"}  
 > [sysbench Github地址](https://github.com/akopytov/sysbench){:target="_blank"}
